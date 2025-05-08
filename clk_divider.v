@@ -1,6 +1,6 @@
 module clk_divider(input clk_in, output reg clk);
     reg[27:0] counter= 0;
-    parameter DIVISOR = 4;
+    parameter DIVISOR = 125000000;
     // The frequency of the output clk_out
     //  = The frequency of the input clk_in divided by DIVISOR
     // For example: Fclk_in = 50Mhz, if you want to get 1Hz signal to blink LEDs
